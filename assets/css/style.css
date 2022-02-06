@@ -1,0 +1,21 @@
+/*
+#334E58
+#88292F
+#A77464
+#A27E8E
+#A2A79E
+*/
+.navbar {
+    height: 200px;
+    font-size: 50px;
+}
+.navbar-brand {
+    font-size: 50px;
+}
+.navColor {
+    font-weight: bold;
+    background-color: #88292F;
+}
+body {
+    background-color: #A2A79E;
+}
