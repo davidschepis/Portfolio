@@ -14,45 +14,49 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid navColor">
-            <a class="navbar-brand navColor" href="#">David Schepis</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <a class="navbar-brand" href="#">David Schepis</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active navColor" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navColor" href="#">About Me</a>
+                        <a class="nav-link" href="#">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navColor" href="#">Projects</a>
+                        <a class="nav-link" href="#">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navColor" href="#">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navColor" href="#">Contact Me</a>
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container-fluid">
+
+    <main class="container mainSection">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="box-shadow: 10px 10px 5px grey;">
                 <div class="carousel-item active">
+                    <img class="w-100" src="./assets/images/tucson.jpg" alt="Image of Tucson" style="height: 150px">
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
-                            <h1 class="display-4">1</h1>
+                            <h1 class="display-4">About Me</h1>
+                            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
+                                of
+                                its parent.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1 class="display-4">Projects</h1>
                             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of
                                 its parent.</p>
                         </div>
@@ -61,7 +65,7 @@
                 <div class="carousel-item">
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
-                            <h1 class="display-4">2n</h1>
+                            <h1 class="display-4">Resume</h1>
                             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of
                                 its parent.</p>
                         </div>
@@ -70,21 +74,28 @@
                 <div class="carousel-item">
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
-                            <h1 class="display-4">3</h1>
+                            <h1 class="display-4">Contact Me</h1>
                             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of
                                 its parent.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev carouselController" href="#carouselExampleIndicators" role="button"
+                data-slide="prev" onclick="pauseCarousel()">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next carouselController" href="#carouselExampleIndicators" role="button"
+                data-slide="next" onclick="pauseCarousel()">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
         </div>
     </main>
 

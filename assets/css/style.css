@@ -19,3 +19,20 @@
 body {
     background-color: #A2A79E;
 }
+.mainSection {
+    height: 600px;
+}
+.carousel-item {
+    border: solid #334E58 5px;
+    height: 600px;
+}
+.carouselController {
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+      top: 90%;
+      height: 50px;
+}

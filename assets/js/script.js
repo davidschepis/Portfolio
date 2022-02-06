@@ -1,1 +1,3 @@
-$('.carousel').carousel('pause');
+const pauseCarousel = () => {
+    $('.carousel').carousel('pause');
+}
