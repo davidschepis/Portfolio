@@ -23,16 +23,35 @@ body {
     height: 600px;
 }
 .carousel-item {
-    border: solid #334E58 5px;
     height: 600px;
 }
 .carouselController {
     font-weight: bold;
-    color: black;
+    color: white;
     font-size: 15px;
 }
+
 .carousel-control-prev,
 .carousel-control-next{
       top: 90%;
       height: 50px;
+}
+
+#aboutMeText {
+    color: white;
+    font-size: 25px;
+}
+
+.carousel {
+    background-color: #88292F;
+}
+
+.sectionTitles {
+    color: white;
+}
+
+@media screen and (max-width: 995px) {
+    .navbar {
+        height: auto;
+    }
 }
