@@ -9,19 +9,24 @@
     height: 200px;
     font-size: 50px;
 }
+
 .navbar-brand {
     font-size: 50px;
 }
+
 .navColor {
     font-weight: bold;
     background-color: #88292F;
 }
+
 body {
     background-color: #A2A79E;
 }
+
 .mainSection {
     height: 600px;
 }
+
 .carousel-item {
     height: 600px;
 }
@@ -49,6 +54,68 @@ body {
 .sectionTitles {
     color: white;
 }
+
+#project1 img {
+    margin: auto;    
+    display: block;
+    border-style: groove;
+}
+
+#project1Text {
+    color: white;
+}
+
+.projects img:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.projects a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.imgHolder:hover .imgTextHolder {
+    opacity: 1;
+}
+
+.imgTextHolder {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.imgText {
+    color: white;
+    background-color: #334E58;
+    font-size: 20px;
+}
+
+.imgText:hover {
+    cursor: pointer;
+}
+
+.projects a {
+    font-size: 40px;
+    color: white;
+    transition: 0.3s;
+}
+
+.projects a:hover {
+    font-size: 55px;
+    opacity: .75;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.85); }
+    100% { transform: scale(1); }
+  }
 
 @media screen and (max-width: 995px) {
     .navbar {

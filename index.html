@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark static-top">
         <div class="container-fluid navColor">
-            <a class="navbar-brand" href="#">David Schepis</a>
+            <a class="navbar-brand" href="#" onclick="navigateCarousel(0)">David Schepis</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,16 +22,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
+                        <a class="nav-link" href="#" onclick="navigateCarousel(0)">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#" onclick="navigateCarousel(1)">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resume</a>
+                        <a class="nav-link" href="#" onclick="navigateCarousel(6)">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#" onclick="navigateCarousel(7)">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -46,19 +46,146 @@
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
                             <h1 class="display-4"><strong class="sectionTitles">About Me</strong></h1>
-                            <p class="lead" id="aboutMeText">My name is David Schepis and I am an aspiring Web Developer. I come from a CS background and have been
-                                interested in programming ever since I wrote my first scripts as a teenager. In my free time I like to produce music
+                            <p class="lead" id="aboutMeText">My name is David Schepis and I am an aspiring Web
+                                Developer. I come from a CS background and have been
+                                interested in programming ever since I wrote my first scripts as a teenager. In my free
+                                time I like to produce music
                                 and watch sports, which are my other two passions.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item projects" id="project1">
+                    <div class="imgHolder mt-5">
+                        <img class="w-50" src="./assets/images/autoparts.png" alt="Auto Parts Website"
+                            style="height: 350px" onclick="openProject(1)">
+                        <div class="imgTextHolder" onclick="openProject(1)">
+                            <div class="imgText">Click to see live site</div>
+                        </div>
+                    </div>
                     <div class="jumbotron jumbotron-fluid">
-                        <div class="container">
-                            <h1 class="display-4">Projects</h1>
-                            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of
-                                its parent.</p>
+                        <div class="container text-center">
+                            <h1 class="display-4"><strong class="sectionTitles">Auto Parts Inventory</strong>
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-10">
+                                        <p class="lead" id="project1Text">Fullstack application that allows access to an
+                                            automotive inventory,
+                                            utilizes Handlebars for the frontend and Node/Express/Sequelize for the
+                                            backend.
+                                        </p>
+                                        <a href="https://github.com/IanMordaunt/Auto-Parts-Inventory"
+                                            target="_blank">Github Repo</a>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item projects" id="project1">
+                    <div class="imgHolder mt-5">
+                        <img class="w-50" src="./assets/images/notes.png" alt="Note Taker" style="height: 350px"
+                            onclick="openProject(2)">
+                        <div class="imgTextHolder" onclick="openProject(2)">
+                            <div class="imgText">Click to see live site</div>
+                        </div>
+                    </div>
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container text-center">
+                            <h1 class="display-4"><strong class="sectionTitles">Note Taker</strong>
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-10">
+                                        <p class="lead" id="project1Text">Application powered by Node/Express that
+                                            allows a user to create/delete
+                                            personal notes.
+                                        </p>
+                                        <a class="githubLink" href="https://github.com/davidschepis/Note_Taker"
+                                            target="_blank">Github
+                                            Repo</a>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item projects" id="project1">
+                    <div class="imgHolder mt-5">
+                        <img class="w-50" src="./assets/images/techblog.png" alt="Note Taker" style="height: 350px"
+                            onclick="openProject(3)">
+                        <div class="imgTextHolder" onclick="openProject(3)">
+                            <div class="imgText">Click to see live site</div>
+                        </div>
+                    </div>
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container text-center">
+                            <h1 class="display-4"><strong class="sectionTitles">Tech Blog</strong>
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-10">
+                                        <p class="lead" id="project1Text">Tech Blog website which allows for creating
+                                            and commenting on
+                                            blog posts
+                                        </p>
+                                        <a class="githubLink" href="https://github.com/davidschepis/Tech_Blog"
+                                            target="_blank">Github
+                                            Repo</a>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item projects" id="project1">
+                    <div class="imgHolder mt-5">
+                        <img class="w-50" src="./assets/images/weather.png" alt="Note Taker" style="height: 350px"
+                            onclick="openProject(4)">
+                        <div class="imgTextHolder" onclick="openProject(4)">
+                            <div class="imgText">Click to see live site</div>
+                        </div>
+                    </div>
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container text-center">
+                            <h1 class="display-4"><strong class="sectionTitles">Weather Dashboard</strong>
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-10">
+                                        <p class="lead" id="project1Text">Live webpage which allows for viewing the
+                                            weather forecast for
+                                            any city in the world.
+                                        </p>
+                                        <a class="githubLink" href="https://github.com/davidschepis/Homework6"
+                                            target="_blank">Github
+                                            Repo</a>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item projects" id="project1">
+                    <div class="imgHolder mt-5">
+                        <img src="./assets/images/socialnetworkapi.png" alt="Note Taker"
+                            style="height: 350px; width: 350px;" onclick="openProject(5)">
+                        <div class="imgTextHolder" onclick="openProject(5)">
+                            <div class="imgText">Click to see live site</div>
+                        </div>
+                    </div>
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container text-center">
+                            <h1 class="display-4"><strong class="sectionTitles">Social Network API</strong>
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-10">
+                                        <p class="lead" id="project1Text">Back-end for a social network website. Uses
+                                            mongoDB and node/express.
+                                        </p>
+                                        <a class="githubLink" href="https://github.com/davidschepis/Social_Network_API"
+                                            target="_blank">Github
+                                            Repo</a>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
                         </div>
                     </div>
                 </div>
