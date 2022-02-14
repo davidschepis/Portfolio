@@ -17,3 +17,13 @@
     display: inline-block;
     float:none;
 }
+
+.projectImage {
+    height: 200px;
+    width: 400px;
+}
+
+.projectImage:hover {
+    opacity: .5;
+    cursor: pointer;
+}
