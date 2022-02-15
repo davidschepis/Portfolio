@@ -7,8 +7,10 @@ const showProject = (num) => {
     const button2 = $('<button>');
     button1.attr("type", "button");
     button2.attr("type", "button");
-    button1.addClass("btn btn-primary m-1");
-    button2.addClass("btn btn-primary m-1");
+    button1.attr("style", "background-color: white");
+    button2.attr("style", "background-color: white");
+    button1.addClass("btn m-1");
+    button2.addClass("btn m-1");
 
     switch (num) {
         case 1:
