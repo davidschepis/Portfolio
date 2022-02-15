@@ -12,6 +12,7 @@ const showProject = (num) => {
     const img = $('<img>');
     img.addClass("img-fluid")
     const p = $('<p>');
+    p.attr("style", "font-size: 30px");
     const button1 = $('<button>');
     const button2 = $('<button>');
     button1.attr("type", "button");
@@ -20,6 +21,7 @@ const showProject = (num) => {
     button2.attr("style", "background-color: white");
     button1.addClass("btn m-1");
     button2.addClass("btn m-1");
+    $("#modalTitle").attr("style", "font-size: 45px; font-weight: bold");
 
     switch (num) {
         case 1:
@@ -53,7 +55,7 @@ const showProject = (num) => {
             button2.attr("onclick", "window.open('https://github.com/davidschepis/Text_Editor')");
             break;
         case 4:
-            $("#modalTitle").text('Weather Daskboard');
+            $("#modalTitle").text('Weather Dashboard');
             img.attr("src", "./assets/images/weather.png")
             img.attr("alt", "Weather Website")
             p.text("Weather Dashboard application that allows for viewing the current forecast for any city");

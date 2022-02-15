@@ -127,6 +127,10 @@ body{
     width: 60px;
 }
 
+.fileLogo:hover {
+    transform: scale(1.25);
+}
+
 .logo {
     display: inline-block;
 }
