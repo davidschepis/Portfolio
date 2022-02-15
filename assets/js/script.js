@@ -1,3 +1,12 @@
+//close modal if the user clicks outside the modal
+let modal = document.getElementById("projectModal");
+window.onclick = (e) => {
+    if (e.target == modal) {
+        closeProjectModal();
+    }
+}
+
+//fill in modal and show it
 const showProject = (num) => {
     $("#modalBody").html("");
     const img = $('<img>');
@@ -77,9 +86,12 @@ const showProject = (num) => {
             break;
     }
     $("#modalBody").append(img, p, button1, button2);
-    $('#projectModal').modal('show');
+    // $('#projectModal').modal('show');
+    $('#projectModal').fadeIn('slow');
 }
 
+//close modal
 const closeProjectModal = () => {
-    $('#projectModal').modal('hide');
+    // $('#projectModal').modal('hide');
+    $('#projectModal').fadeOut('fast');
 }

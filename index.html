@@ -16,7 +16,11 @@
     <section id="header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">David Schepis</a>
+                <a href="index.html" id="logoLink">
+                    <img class="logo" src="./assets/images/21201021021574330934-512.png" alt="Portfolio Icon"
+                        id="portfolio">
+                    <p class="logo">My Portfolio</p>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#aboutMe">About Me</a>
+                            <a class="nav-link" href="#aboutMe" style="border-left: solid var(--c3) 1px;">About Me</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projects">Projects</a>
@@ -32,7 +36,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#resume">Resume</a>
                         </li>
-                        <li class="nav-item" style="border: none">
+                        <li class="nav-item">
                             <a class="nav-link" href="#contactMe">Contact Me</a>
                         </li>
                     </ul>
@@ -76,55 +80,50 @@
             </div>
             <div class="col">
                 <div class="row">
-                    <div class="col m-5">
-                        <div class="card" style="width: 400px">
-                            <img class="projectImage" src="./assets/images/autoparts.png" alt="Auto Parts Webpage"
-                                onclick="showProject(1)">
+                    <div class="col m-1 d-flex align-items-stretch">
+                        <div class="card" style="width: 400px" onclick="showProject(1)">
+                            <img class="projectImage" src="./assets/images/autoparts.png" alt="Auto Parts Webpage">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Auto Parts Inventory Full-Stack Application</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col m-5">
-                        <div class="card" style="width: 400px">
-                            <img class="projectImage" src="./assets/images/notetaker.png" alt="Note Taking Webpage"
-                                onclick="showProject(2)">
+                    <div class="col m-1 d-flex align-items-stretch">
+                        <div class="card" style="width: 400px" onclick="showProject(2)">
+                            <img class="projectImage" src="./assets/images/notetaker.png" alt="Note Taking Webpage">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Note Taker App</h5>
+                                <h5 class="card-title">Note Taker Application</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col m-5">
-                        <div class="card" style="width: 400px">
-                            <img class="projectImage" src="./assets/images/texteditor.png" alt="Text Editor Webpage"
-                                onclick="showProject(3)">
+                    <div class="col m-1 d-flex align-items-stretch">
+                        <div class="card" style="width: 400px" onclick="showProject(3)">
+                            <img class="projectImage" src="./assets/images/texteditor.png" alt="Text Editor Webpage">
                             <div class="card-body text-center">
                                 <h5 class="card-title">PWA Text-Editor</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col m-5">
-                        <div class="card" style="width: 400px">
-                            <img class="projectImage" src="./assets/images/weather.png" alt="Weather Webpage"
-                                onclick="showProject(4)">
+                    <div class="col m-1 d-flex align-items-stretch">
+                        <div class="card" style="width: 400px" onclick="showProject(4)">
+                            <img class="projectImage" src="./assets/images/weather.png" alt="Weather Webpage">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Weather Dashboard App</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col m-5">
-                        <div class="card" style="width: 400px">
+                    <div class="col m-1 d-flex align-items-stretch">
+                        <div class="card" style="width: 400px" onclick="showProject(5)">
                             <img class="projectImage" src="./assets/images/socialnetworkapi.png"
-                                alt="Social Network API Logo" onclick="showProject(5)">
+                                alt="Social Network API Logo">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Social Network Backend</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col m-5">
-                        <div class="card" style="width: 400px">
-                            <img class="projectImage" src="./assets/images/techblog.png" alt="Tech Blog Webpage"
-                                onclick="showProject(6)">
+                    <div class="col m-1 d-flex align-items-stretch">
+                        <div class="card" style="width: 400px" onclick="showProject(6)">
+                            <img class="projectImage" src="./assets/images/techblog.png" alt="Tech Blog Webpage">
                             <div class="card-body text-center">
                                 <h5 class="card-title">TechBlog Webpage</h5>
                             </div>
@@ -141,8 +140,15 @@
                 <h1 class="sectionHeader">Resume</h1>
             </div>
             <div class="col">
+                <h1 class="sectionHeader">Download</h1>
                 <a href="./assets/resume.pdf" download>
-                    <h1 class="sectionHeader">Download PDF</h1>
+                    <img src="./assets/images/pdf.svg" alt="PDF Logo" class="fileLogo">
+                </a>
+                <a href="./assets/resume.docx" download>
+                    <img src="./assets/images/word.svg" alt="Docx Logo" class="fileLogo">
+                </a>
+                <a href="./assets/resume.pdf" download>
+                    <img src="./assets/images/txt.svg" alt="Text Logo" class="fileLogo">
                 </a>
             </div>
         </div>

@@ -12,9 +12,6 @@ html,body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-}
-
-html {
     scroll-behavior: smooth;
 }
 
@@ -43,7 +40,7 @@ body{
     width: 400px;
 }
 
-.projectImage:hover {
+.card:hover {
     opacity: .5;
     cursor: pointer;
 }
@@ -51,6 +48,20 @@ body{
 .navbar a {
     font-size: 60px;
     color: var(--c5) !important;
+}
+
+#header a:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 5px 15px var(--c2);
+}
+
+#header a:hover p{
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+#contactMe a:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px var(--c2);
 }
 
 .navbar li {
@@ -85,4 +96,41 @@ body{
 
 #modalTitle, #modalBody {
     color: white;
+}
+
+.card {
+    background-color: #334E58;
+    color:#A2A79E;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+#portfolio {
+    height: 60px;
+    width: 60px;
+}
+
+#header p {
+    color: var(--c5);
+    font-size: 60px
+}
+
+.sectionHeader {
+    font-size: 60px;
+}
+
+.fileLogo {
+    height: 60px;
+    width: 60px;
+}
+
+.logo {
+    display: inline-block;
+}
+
+#logoLink {
+    text-decoration: none;
 }
