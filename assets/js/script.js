@@ -60,9 +60,9 @@ const showProject = (num) => {
             img.attr("alt", "Weather Website")
             p.text("Weather Dashboard application that allows for viewing the current forecast for any city");
             button1.text("Live Site");
-            button1.attr("onclick", "window.open('https://davidschepis.github.io/Homework6/')");
+            button1.attr("onclick", "window.open('https://davidschepis.github.io/Weather_Dashboard/')");
             button2.text("Github Repo");
-            button2.attr("onclick", "window.open('https://github.com/davidschepis/Homework6')");
+            button2.attr("onclick", "window.open('https://github.com/davidschepis/Weather_Dashboard')");
             break;
         case 5:
             $("#modalTitle").text('Social Network Backend');
